@@ -11,13 +11,13 @@ export class AddItemFormComponent implements OnInit {
 
 
   @Input() item: BudgetItem = new BudgetItem('', 0);
-  @Output() formSubmits: EventEmitter<BudgetItem> = new EventEmitter
+  @Output() formSubmit: EventEmitter<BudgetItem> = new EventEmitter
   
   constructor() { }
 
   onSubmit(form: NgForm) { 
-    this.formSubmit.emit(form.value);
-    form.reset();
+    console.log(this.formSubmit.emit(form.value));
+    //form.reset();
   }
 
   ngOnInit(): void {

@@ -23,14 +23,14 @@ import { EditItemModalComponent } from './edit-item-modal/edit-item-modal.compon
     BudgetItemListComponent,
     BudgetItemCardComponent,
     AddItemFormComponent,
-    EditItemModalComponent
+    EditItemModalComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
-
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
